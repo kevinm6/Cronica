@@ -134,20 +134,20 @@ struct SearchContentPosterView: View {
                         }
                     }
                     if isFavorite {
-                        Image(systemName: "suit.heart.fill")
+                        Image(systemName: "suit.heart")
                             .imageScale(.small)
                             .foregroundColor(.white.opacity(0.9))
                             .padding([.vertical])
                             .padding(.trailing, 4)
                     }
                     if isWatched {
-                        Image(systemName: "rectangle.badge.checkmark.fill")
+                        Image(systemName: "rectangle.badge.checkmark")
                             .imageScale(.small)
                             .foregroundColor(.white.opacity(0.9))
                             .padding([.vertical])
                             .padding(.trailing, 4)
                     }
-                    Image(systemName: "square.stack.fill")
+                    Image(systemName: "square.stack")
                         .imageScale(.small)
                         .foregroundColor(.white.opacity(0.9))
                         .padding([.vertical, .trailing])

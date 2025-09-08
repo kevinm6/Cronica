@@ -33,7 +33,7 @@ struct ItemContentCardView: View {
                     } else {
                         ZStack {
                             Rectangle().fill(.gray.gradient)
-                            Image(systemName: "popcorn.fill")
+                            Image(systemName: "popcorn")
                                 .foregroundColor(DrawingConstants.placeholderForegroundColor)
                                 .padding()
                         }
@@ -49,34 +49,34 @@ struct ItemContentCardView: View {
                             HStack {
                                 Spacer()
                                 if isArchive {
-                                    Image(systemName: "archivebox.fill")
+                                    Image(systemName: "archivebox")
                                         .imageScale(.small)
                                         .foregroundColor(.white.opacity(0.9))
                                         .padding([.vertical])
                                         .padding(.trailing, 4)
                                 }
                                 if isPin {
-                                    Image(systemName: "pin.fill")
+                                    Image(systemName: "pin")
                                         .imageScale(.small)
                                         .foregroundColor(.white.opacity(0.9))
                                         .padding([.vertical])
                                         .padding(.trailing, 4)
                                 }
                                 if isFavorite {
-                                    Image(systemName: "suit.heart.fill")
+                                    Image(systemName: "suit.heart")
                                         .imageScale(.small)
                                         .foregroundColor(.white.opacity(0.9))
                                         .padding([.vertical])
                                         .padding(.trailing, 4)
                                 }
                                 if isWatched {
-                                    Image(systemName: "rectangle.badge.checkmark.fill")
+                                    Image(systemName: "rectangle.badge.checkmark")
                                         .imageScale(.small)
                                         .foregroundColor(.white.opacity(0.9))
                                         .padding([.vertical])
                                         .padding(.trailing, 4)
                                 }
-                                Image(systemName: "square.stack.fill")
+                                Image(systemName: "square.stack")
                                     .imageScale(.small)
                                     .foregroundColor(.white.opacity(0.9))
                                     .padding([.vertical, .trailing])

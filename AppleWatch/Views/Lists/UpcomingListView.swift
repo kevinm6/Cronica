@@ -67,7 +67,7 @@ struct UpcomingListView: View {
                 } else {
                     ZStack {
                         Rectangle().fill(.gray.gradient)
-                        Image(systemName: "popcorn.fill")
+                        Image(systemName: "popcorn")
                             .fontWidth(.expanded)
                             .foregroundColor(.white.opacity(0.8))
                             .padding([.horizontal, .bottom])

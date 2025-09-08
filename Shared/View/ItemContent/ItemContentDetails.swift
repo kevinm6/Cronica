@@ -476,7 +476,7 @@ struct ItemContentDetails: View {
                 ZStack {
                     Rectangle().fill(.gray.gradient)
                     VStack {
-                        Image(systemName: "popcorn.fill")
+                        Image(systemName: "popcorn")
                             .font(.title)
                             .fontWidth(.expanded)
                             .foregroundColor(.white.opacity(0.8))
@@ -804,7 +804,7 @@ extension ItemContentDetails {
                               value: viewModel.isFavorite)
                 .changeEffect(
                     .spray(origin: UnitPoint(x: 0.25, y: 0.5)) {
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "heart")
                             .foregroundStyle(.red)
                     }, value: animateFavorite)
 #else
@@ -815,7 +815,7 @@ extension ItemContentDetails {
 #if !os(tvOS)
                     .changeEffect(
                         .spray(origin: UnitPoint(x: 0.25, y: 0.5)) {
-                            Image(systemName: "heart.fill")
+                            Image(systemName: "heart")
                                 .foregroundStyle(.red)
                         }, value: animateFavorite)
 #endif

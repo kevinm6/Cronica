@@ -42,7 +42,7 @@ struct WatchlistItemCardView: View {
                         HStack {
                             Spacer()
                             if isFavorite {
-                                Image(systemName: "suit.heart.fill")
+                                Image(systemName: "suit.heart")
                                     .imageScale(.small)
                                     .foregroundColor(.white.opacity(0.9))
                                     .padding([.vertical])
@@ -52,7 +52,7 @@ struct WatchlistItemCardView: View {
 #endif
                             }
                             if !isFavorite, isWatched {
-                                Image(systemName: "rectangle.badge.checkmark.fill")
+                                Image(systemName: "rectangle.badge.checkmark")
                                     .imageScale(.small)
                                     .foregroundColor(.white.opacity(0.9))
                                     .padding([.vertical])
@@ -62,7 +62,7 @@ struct WatchlistItemCardView: View {
 #endif
                             }
                             if !isFavorite, !isWatched {
-                                Image(systemName: "square.stack.fill")
+                                Image(systemName: "square.stack")
                                     .imageScale(.small)
                                     .foregroundColor(.white.opacity(0.9))
                                     .padding([.vertical, .trailing])
@@ -197,7 +197,7 @@ struct WatchlistItemCardView: View {
         ZStack {
             Rectangle().fill(.gray.gradient)
             VStack {
-                Image(systemName: "popcorn.fill")
+                Image(systemName: "popcorn")
                     .font(.title)
                     .fontWidth(.expanded)
                     .foregroundColor(.white.opacity(0.8))

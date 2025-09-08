@@ -19,13 +19,13 @@ struct AttributionView: View {
                            alignment: .center)
                     .accessibility(hidden: true)
                 Text("This product uses the TMDb API but is not endorsed or certified by TMDb.")
-                    .frame(alignment: .center)
+                    .multilineTextAlignment(.center)
                     .font(.caption)
                     .foregroundColor(.secondary)
                     .padding([.horizontal, .bottom])
             }
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, alignment: .center)
         .accessibilityElement(children: .combine)
         .unredacted()
     }

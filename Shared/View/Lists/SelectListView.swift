@@ -235,20 +235,11 @@ struct SelectListView: View {
             Image(systemName: "plus.rectangle.on.rectangle")
                 .imageScale(.medium)
                 .accessibilityLabel("New List")
-                .fontDesign(.rounded)
-                .fontWeight(.semibold)
-                .foregroundStyle(.white)
-                .padding(.horizontal, 4)
-                .padding(.vertical, 2)
+                .font(.system(size: 18, weight: .semibold, design: .rounded))
+                .foregroundStyle(.tint)
 #endif
         }
-        .buttonStyle(.borderedProminent)
-#if !os(macOS)
-        .contentShape(Circle())
-        .clipShape(Circle())
-        .buttonBorderShape(.circle)
-        .shadow(radius: 2.5)
-#endif
+        .buttonStyle(.plain)
     }
     
     private func delete(offsets: IndexSet) {

@@ -75,11 +75,11 @@ struct SearchItem: View {
                     ZStack {
                         Color.black.opacity(0.5)
                         if isWatched {
-                            Image(systemName: "checkmark.circle.fill")
+                            Image(systemName: "checkmark.circle")
                                 .foregroundColor(.white.opacity(0.8))
                                 .padding()
                         } else {
-                            Image(systemName: "square.stack.fill")
+                            Image(systemName: "square.stack")
                                 .foregroundColor(.white.opacity(0.8))
                                 .padding()
                         }
@@ -158,11 +158,11 @@ struct ItemContentRow: View {
                     ZStack {
                         Color.black.opacity(0.5)
                         if isWatched {
-                            Image(systemName: "rectangle.badge.checkmark.fill")
+                            Image(systemName: "rectangle.badge.checkmark")
                                 .foregroundColor(.white.opacity(0.8))
                                 .padding()
                         } else {
-                            Image(systemName: "square.stack.fill")
+                            Image(systemName: "square.stack")
                                 .foregroundColor(.white.opacity(0.8))
                                 .padding()
                         }
@@ -204,7 +204,7 @@ private struct SearchItemContentImageView: View {
             } else {
                 ZStack {
                     Rectangle().fill(.gray.gradient)
-                    Image(systemName: "popcorn.fill")
+                    Image(systemName: "popcorn")
                         .foregroundColor(.white.opacity(0.8))
                 }
                 .frame(width: DrawingConstants.imageWidth,

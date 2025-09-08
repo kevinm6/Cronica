@@ -15,16 +15,9 @@ struct RoundedCloseButton: View {
             Image(systemName: "xmark")
                 .imageScale(.medium)
                 .accessibilityLabel("Close")
-                .fontDesign(.rounded)
-                .fontWeight(.semibold)
-                .foregroundStyle(.white)
-                .padding(.horizontal, 4)
-                .padding(.vertical, 2)
+                .font(.system(size: 18, weight: .semibold, design: .rounded))
+                .foregroundStyle(.secondary)
         }
-        .buttonStyle(.borderedProminent)
-        .contentShape(Circle())
-        .clipShape(Circle())
-        .buttonBorderShape(.circle)
-        .shadow(radius: 2.5)
+        .buttonStyle(.plain)
     }
 }

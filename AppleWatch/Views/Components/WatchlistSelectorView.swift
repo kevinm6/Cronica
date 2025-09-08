@@ -31,7 +31,7 @@ struct WatchlistSelectorView: View {
                             } label: {
                                 HStack {
                                     if selectedList == list {
-                                        Image(systemName: "checkmark.circle.fill")
+                                        Image(systemName: "checkmark.circle")
                                     }
                                     Text(list.title)
                                 }
@@ -51,7 +51,7 @@ struct WatchlistSelectorView: View {
                                 } label: {
                                     HStack {
                                         if selectedCustomList == list {
-                                            Image(systemName: "checkmark.circle.fill")
+                                            Image(systemName: "checkmark.circle")
                                         }
                                         Text(list.itemTitle)
                                     }

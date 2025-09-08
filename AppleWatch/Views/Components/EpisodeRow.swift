@@ -41,7 +41,7 @@ struct EpisodeRow: View {
                 if isWatched {
                     ZStack {
                         Color.black.opacity(0.6)
-                        Image(systemName: "checkmark.circle.fill")
+                        Image(systemName: "checkmark.circle")
                             .foregroundColor(.white)
                     }
                     .clipShape(
